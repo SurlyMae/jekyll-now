@@ -1,7 +1,15 @@
 ---
 layout: post
-title: You're up and running!
----
+title: About Ashly LaMarr
+--- 
+
+### Curious problem-solver. Fan of Mondays.
+
+<ul>
+<li>I write.</li>
+<li>I travel.</li>
+<li>I do things.</li>
+</ul>
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
