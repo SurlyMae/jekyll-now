@@ -3,7 +3,7 @@ layout: post
 title: About Ashly LaMarr
 --- 
 
-### Curious problem-solver. Fan of Mondays.
+### Curious. Problem-solver. Fan of Mondays.
 
 <ul>
 <li>I write.</li>
