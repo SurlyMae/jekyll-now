@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-I'm hoping you won't judge my site too much. For the past couple of years I've had my stuff up via WordPress, but I've finally decided to do this myself, and it's definitely a work-in-progress as of September 2018. Not to mention, I have a lot of other stuff in my life that comes first - working full-time, going to school for a CS degree, and hanging out with my family. 
+I'm hoping you won't judge my site too much. For the past couple of years I've had my stuff up via WordPress, but I've finally decided to do this myself, and it's definitely a work-in-progress as of September 2018. Not to mention, I have a lot of other stuff in my life that comes first - working full-time, going to school for a CS degree, and hanging out with my family. So just know that I know this isn't yet a good representative of who I am as a developer, and that I'm working on it!
 
-### More Information
+### Now that we have that out of the way...
 
-A place to include any other types of information that you'd like to include about yourself.
+Hi, I'm Ashly!
+I work as a developer in beautiful Salt Lake City, Utah, and volunteer in the tech community whenever I can. I was a Financial Controller before I became a developer - you can read more about that career switch here<link needed>. When I'm not in front of a computer, you can find me enjoying the culinary delights of downtown SLC, lounging poolside in Vegas, or hibernating in my house with a good historical book.
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
