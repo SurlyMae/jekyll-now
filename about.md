@@ -9,5 +9,5 @@ I'm hoping you won't judge my site too much. For the past couple of years I've h
 ### Now that we have that out of the way...
 
 Hi, I'm Ashly!
-I work as a developer in beautiful Salt Lake City, Utah, and volunteer in the tech community whenever I can. I was a in management accounting for a decade before I became a developer. When I'm not in front of a computer, you can find me enjoying the culinary delights of downtown SLC, lounging poolside in Vegas, or hibernating in my house with a good historical book.
+I work as a developer in beautiful Salt Lake City, Utah, and volunteer in the tech community whenever I can. I was in accounting for a decade - most recently as a Financial Controller - before I became a developer. When I'm not in front of a computer, you can find me enjoying the culinary delights of downtown SLC, lounging poolside in Vegas, or hibernating in my house with a good historical book.
 
