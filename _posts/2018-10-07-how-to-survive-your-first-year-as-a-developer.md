@@ -3,8 +3,6 @@ layout: post
 title: So you're a developer now! Here's how to survive.
 --- 
 
-# So you're a developer now! Here's how to survive.
-
 - Lean on your community.
 - Network! (but maybe networking isn't what you think)
 - Don't compare yourself to others.
@@ -15,4 +13,4 @@ title: So you're a developer now! Here's how to survive.
 - Pick a thing - then RUN WITH IT!
 - Do what works for YOU.
 
-Start of blog post
+Start of blog post ...
