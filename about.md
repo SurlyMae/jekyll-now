@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm hoping you won't judge my site too much. For the past couple of years I've had my stuff up via WordPress, but I've finally decided to do this myself, and it's definitely a work-in-progress as of September 2018. Turns out, I was writing about a lot of stuff I thought I 'should' be writing about, instead of writing about what actually excites me - things like design patterns and architecture, how the Google crawler and indexer works, and what it's like to move an entire codebase from .NET to .NET core. I'm on a mission to fix that, but I have a lot of other stuff in my life that comes first - working full-time, getting my CS degree, and hanging out with my family. So just know this isn't yet a good representative of who I am as a developer, and that I'm working on it!
+I'm hoping you won't judge my site too much. For the past couple of years I've had my stuff up via WordPress, but I've finally decided to do this myself, and it's definitely a work-in-progress as of September 2018. Turns out, I was writing about a lot of stuff I thought I 'should' be writing about, instead of writing about what actually excites me - things like design patterns and architecture, how the Google crawler and indexer works, and what it's like to move an entire codebase from .NET to .NET core. I'm on a mission to fix that, but I have a lot of other stuff in my life that comes first - working full-time, taking CS classes, and hanging out with my family. So just know this isn't yet a good representative of who I am as a developer, and that I'm working on it!
 
 ### Now that we have that out of the way...
 
