@@ -5,18 +5,17 @@ title: So you're a developer now! Here's how to survive.
 
 *This is a version of a talk I gave at a [Girl Develop It](https://www.meetup.com/Girl-Develop-It-Salt-Lake-City/ "GDI SLC") meetup in [Silicon Slopes](https://newsroom.siliconslopes.com/about-silicon-slopes-3/), Utah.*
 
-##Why write this post? 
+## Why write this post? 
 
 Well, I think being a developer is **hard**, and I think the first year can be extra difficult. Two years ago I switched careers to development from management accounting, and my first year was really tough. About six months ago, I started feeling like I had my head above water. I could look back and see some things that I had struggled with, and thought I could pass along some advice so maybe others didn't have to go through all the same stuff - or at least so they'd feel less alone while going through it.
 
-##So, some tips...
-- - - - - - 
-#### - Lean on your community.
+## So, some tips...
 ------
+#### Lean on your community.
 You may end up working with a team you love and can commiserate with (a really fun experience!). Or, you may end up working with a team you love but you can’t commiserate with - maybe they're all seniors and you’re the newest, or maybe they work with different technologies or on other projects. Or, you may end up working on a project or feature by yourself. DO NOT TRY TO GO THIS ALONE. (Remember how being a developer is freaking hard?) You NEED people around you who understand what it's like to fail hour after hour, day after day, sometimes week after week. Repeatedly failing is TOUGH when you're alone, and it makes the development experience seem way more difficult than it actually is. So find your community! It can be meetups like Girl Develop It, it can be Twitter, it can be a Facebook group, monthly lunches, a welcoming Slack channel - whatever it is, find a group of people who are developers and understand the fight you are going through every single day - and then make sure you're hanging out with them, talking with them, COMMISERATING with them.
 
-
-- Network! (but maybe networking isn't what you think)
+------
+#### Network! (but maybe networking isn't what you think)
 If you haven’t heard it yet, you will hear over and over how important networking is in this field. I remember feeling terrified after being told I’d have to network. I’m not good at making small talk with strangers and I am also not good at asking them for a job. So I didn’t do that. But I did become active in the community. When I started out, I didn’t feel like I could contribute much in the way of code expertise, but I did have time, so I just started volunteering my time wherever I could.  I volunteered to help organize the UtahJS conference. I reviewed scholarship applications for React Rally last year. I went to meetups and I thanked the speakers after. I chimed in on the UtahJS slack and asked for help from those I admired. I helped people I met make connections they needed to do their job. I even started playing video games with people I’d only met on Slack. And before I knew it, I had people privately inviting me to apply for jobs they had open. And since I could never get past the coding parts of these applications, I’m pretty sure it’s because they had enough exposure to me to realize I wasn’t some psycho, and I’d actually be an okay person to work with. And that’s really all networking is. You’re just putting yourself out there and trying to make genuine connections with people. And eventually it will pay off.
 
 - Don't compare yourself to others.
