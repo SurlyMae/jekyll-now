@@ -9,6 +9,14 @@ In the world of object-oriented programming (OOP), applications are designed usi
 
 _I'm using an adapted code example from the [POODR book](https://www.poodr.com/) by [Sandi Metz](https://www.sandimetz.com/) because she is smart and awesome. I learned about dependency injection (DI) from her book and in order to do that I recreated her Ruby examples in C#, so it made sense that I would re-use those examples here. If you don't know about Sandi and want to learn more about object-oriented design, I cannot recommend her enough!_
 
-In this code sample, we have a Gear class (every gear object will be an instance of this Gear class) with chainring, cog, rim, and tire attributes, and two actions it performs - calculating gear inches and ratio. We also have a Wheel class which has rim and tire attributes and one action it performs - calculating diameter. You would be expected to instantiate a gear object by passing in values for its chainring, cog, rim, and tire sizes (see line 49). Then you would call the GetGearInches method as shown on line 50.
+In this code sample, we have a Gear class (every gear object will be an instance of this Gear class) with chainring, cog, rim, and tire attributes, and two actions it performs - calculating gear inches and ratio. We also have a Wheel class which has rim and tire attributes and one action it performs - calculating diameter. You would be expected to instantiate a gear object by passing in values for its chainring, cog, rim, and tire sizes (see line 49). Then you would call the gear object's GetGearInches method as shown on line 50.
 
 <script src="https://gist.github.com/SurlyMae/995848ee79c86c44bc9ff2aad5c669b7.js"></script>
+
+Where are the dependencies? Check out lines 19-26 in this code sample:
+
+<script src="https://gist.github.com/SurlyMae/f16414c5872b6d8d5d6493667bb7f522.js"></script>
+
+So, how would we even start to address this issue? Let's begin by dealing with the rim and tire that the Gear class knows about, even though rim and tire should really belong to just the Wheel class. It takes a bit of work in a statically-typed language like C#, but here are the steps:
+
+First, you would define an interface (lines 51-54 in the code sample below), and in that interface you would name an abstract member - a GetDiameter method. Then, you would make the Wheel class implement the interface you created (line 34). Wheel already has its own version of the GetDiameter method so it's good to go, but if it didn't, you would need to write a GetDiameter method for the Wheel class since this class is now implementing the IRoundThings interface. Now you can remove the rim and tire attributes from the Gear class and replace them with a SomethingRound attribute of type IRoundThings (line 9), and instead of passing in rim and tire values when instantiating a gear object, you can pass in anything that implements the IRoundThings interface (line 58) - because those things must all have a GetDiameter method, and that GetDiameter method is what's actually needed by the Gear class.
