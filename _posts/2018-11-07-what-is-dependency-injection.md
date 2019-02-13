@@ -25,4 +25,12 @@ First, you would define an interface (lines 51-54 in the code sample below), and
 
 <script src="https://gist.github.com/SurlyMae/784fbef23b595c471c8887af99d196c5.js"></script>
 
-Look at that! We've removed a hard-coded dependency and injected it instead. But wait, we're not done yet! Look at line 22. As Sandi points out in POODR, what if the GetGearInches method was much more complex, and had this dependency buried inside it? And then what if that other object's GetDiameter method changed and, because other parts of the GetGearInches method were so dependent on the GetDiameter method, that you had to change all those parts too?
+Look at that - we've removed a hard-coded dependency and injected it instead. But wait, we're not done yet! Look at line 22. As Sandi points out in POODR, what if the GetGearInches method was much more complex, and had this dependency buried inside it? And then what if that other object's GetDiameter method changed and, because other parts of the GetGearInches method were so dependent on the GetDiameter method, that you had to change all those parts too? Should we separate the GetDiameter method? (We should.) Now the GetGearInches method is more abstract.
+
+<script src="https://gist.github.com/SurlyMae/f0a73436e1eb143056c8c7c34e117ec8.js"></script>
+
+There is another way we can improve our code. Note how Gear's constructor (lines 11-16 below) is defined with its parameters in a certain order. This means that when a gear object is created elsewhere in the app, the instantiator of the object needs to know the correct order to pass those initializing arguments. That's a dependency, and with C#'s 'Named Arguments' feature, it's simple to get rid of. Line 54 shows the new way of creating a gear object - a way where the instantiator only needs to know the arguments required, not the order in which they must be sent. I think it's also easier to read than the way it was done in all the previous code samples. Yay readability!!
+
+<script src="https://gist.github.com/SurlyMae/feaf7e6d74f47ce8f05c5ec401b0bef2.js"></script>
+
+There are more dependency-related improvements which can be made to this code, but hopefully I've given you a good start on understanding what dependency injection is. Feel free to hit me up on Twitter with your thoughts, and if this sort of stuff interests you, definitely check out Sandi Metz and all of her great work. She is a fantastic teacher.
