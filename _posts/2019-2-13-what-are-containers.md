@@ -21,11 +21,15 @@ I'm going to let the experts answer this one. Last night on Twitter, @anildash d
 > @justinabrahms:
 > You know when you're at home alone and you just kinda trash the
 > place b/c why not? Apps do that. They don't clean up after
-> themselves (files everywhere). They don't have to worry about using > the bathroom (CPU) when someone else was going to use it. Theyve got > it all to themselves
+> themselves (files everywhere). They don't have to worry about
+> using the bathroom (CPU) when someone else was going to use it.
+> Theyve got it all to themselves
 
 > @anildash:
-> Ah! A lot of nice things, mostly for programmers & people who manage > computers. First, It's easy to simulate the same environment on your > computer where you're writing the code as on the eventual server
-> that will run it for real.
+> Ah! A lot of nice things, mostly for programmers & people who
+> manage computers. First, It's easy to simulate the same environment
+> on your computer where you're writing the code as on the eventual
+> server that will run it for real.
 
 > @anildash
 > You don't have to worry about one app stepping on another. And
