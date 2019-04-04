@@ -3,7 +3,7 @@ layout: post
 title: So you're a developer now! Here's how to survive.
 --- 
 
-*This is a version of a talk I gave at a [Girl Develop It](https://www.meetup.com/Girl-Develop-It-Salt-Lake-City/ "GDI SLC") meetup in [Silicon Slopes](https://newsroom.siliconslopes.com/about-silicon-slopes-3/), Utah.*
+*This is a version of a talk I gave at a meetup in [Silicon Slopes](https://newsroom.siliconslopes.com/about-silicon-slopes-3/), Utah.*
 
 ## Why write this post? 
 
