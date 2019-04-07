@@ -10,8 +10,9 @@ REST is a way to build a web service. Think of a web service as a common platfor
 > "REST is intended to evoke an image of how a well-designed web app
 > behaves: A network of web pages (a virtual state-machine) where the
 > user progresses through an application by selecting links (state
-> transitions), resulting in the next page (representing the next state > of the application) being transferred to the user and rendered for
-> their use."
+> transitions), resulting in the next page (representing the next
+> state of the application) being transferred to the user and rendered
+> for their use."
 
 Here is a real-life example:
 
