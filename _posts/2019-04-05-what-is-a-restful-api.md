@@ -27,7 +27,25 @@ Here is a real-life example:
 
 (The HTTP client can be a browser, but often it's an application.)
 
-REST is defined by six constraints
+REST is defined by six constraints - six design decisions:
+
+1. Client-server constraint
+   - Client and server are separated
+   - Client shouldn't be concerned with how data is stored or how representation is generated
+   - Server shouldn't be concerned with user interface, or user state, or anything related to how client is implemented
+   - What's the why?: Client and server can thus evolve separately
+2. Statelessness constraint
+   - The state necessary to handle any request is contained within the request itself
+   - Requests cannot take advantage of any stored context on the server; session state is kept entirely on the client, via caching
+   - What's the why?: Visibility, reliability, scalability
+3. Cacheable constraint
+   - Each response must explicitly state if it can be cached or not
+   - If response is cacheable, then client cache is given right to reuse that response data for later, equivalent requests
+4. Layered system constraint
+   - Restricts knowledge to a single layer
+   - Solution can be comprised of multiple layers
+   - No one layer can directly access layer that's beyond the next one.
+   - Client cannot tell what layer it's connected to, or if it's connected to an intermediary layer along the way
 
 REST often uses HTTP protocol
 -what is http protocol?
