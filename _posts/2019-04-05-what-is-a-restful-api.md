@@ -28,7 +28,7 @@ Here is a real-life example:
 
 (The HTTP client can be a browser, but often it's an application.)
 
-REST is defined by six constraints - six design decisions:
+REST is defined by six constraints (constraints are just design decisions):
 
 1. Client-server constraint
    - Client and server are separated
@@ -45,15 +45,54 @@ REST is defined by six constraints - six design decisions:
 4. Layered system constraint
    - Restricts knowledge to a single layer
    - Solution can be comprised of multiple layers
-   - No one layer can directly access layer that's beyond the next one.
    - Client cannot tell what layer it's connected to, or if it's connected to an intermediary layer along the way
+5. Code on demand constraint (optional)
+   - Server can extend or customize client functionality
+   - Example: if client is a web app, server (api) can transfer JS code to client to extend its functionality
+6. Uniform Interface Constraint
+   - API and API consumers share one single technical interface. Since typically working with HTTP protocol, interface should be seen as a combination of resource URIs, HTTP methods, and HTTP media types
+   - Subconstraints:
+     1. Identification of resources
+        - Individual resources are identified in requests using URIs, and those resources are conceptually separate from their representation
+        - Representation is the JSON or XML sent back in the response
+     2. Manipulation of resources through representations
+        - Representation plus metadata should be sufficient information to modify or delete the resource (permissions assumed)
+     3. Self-descriptive messages
+        - Each message must include enough information to describe how to process the message
 
 REST often uses HTTP protocol
 -what is http protocol?
+-what are the http methods?
 
 Things that are important:
 -status codes
 -naming conventions
 -unchanging URIs
 
-To be truly RESTful, must implement HATEOAS
+Richardson Maturity Model
+
+- Grades APIs by their RESTful maturity
+
+1. Level 0: The swamp of plain old XML
+   - HTTP protocol is used for remote interaction, but the rest of the protocol isn't used how it should be.
+   - Examples are SOAP or other RPCs
+   - Basically, HTTP is only used to transport
+   - Example: Sending a POST req to /host/api to get info, and sending a POST req to same URI for a real POST. Info related to the resource you want is sent within XML body.
+2. Level 1: Resources
+   - Each resource is mapped to a URI, but still only one HTTP method used.
+   - Example: /host/api/employees URI, and /host/api/employees/id URI, but API only uses a POST method
+3. Level 2: Verbs
+   - Correct HTTP verbs are used
+   - Correct status codes are used
+4. Level 3: Hypermedia
+   - Level 3 is the bare minimum for an API to be considered truly RESTful
+   - API supports HATEOAS
+   - Example: a GET req to /api/employees would return a list of employees and code/links that drive application state (hypermedia)
+
+To be truly RESTful, must implement HATEOAS:
+
+1. Hypermedia as the engine of application state
+   - Hypermedia is a generalization of hypertext (links)
+   - Drives how to consume, use the API
+   - Allows for a self-documenting API
+   - Example: User asks API for list of departments, API sends back the list along with links for what the user can do next - there could be a link that says, 'Show all employees for this department' or 'Edit this department'
