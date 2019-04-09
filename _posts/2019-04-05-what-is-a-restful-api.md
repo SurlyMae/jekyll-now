@@ -24,11 +24,11 @@ Here is a real-life example:
    - This response message contains a **representation** of the resource the browser has requested
 5. The browser interprets the representation and displays it
    - In other words, our browser (the HTTP client, remember) has changed **state**
-6. The client changes _state_ depending on _representation_ of the resource we're accessing.
+6. The client changes _**state**_ depending on _**representation**_ of the resource we're accessing.
 
 The HTTP client can be a browser, but often it's an application.
 
-REST is defined by six constraints (constraints are just design decisions):
+**REST is defined by six constraints** (constraints are just design decisions):
 
 1. Client-server constraint
    - Client and server are separated
@@ -62,7 +62,7 @@ REST is defined by six constraints (constraints are just design decisions):
 
 REST often uses HTTP protocol, but doesn't have to.
 
-What is http protocol?
+**What is http protocol?**
 
 1. A protocol that allows fetching of resources
    - A protocol is just a set of rules that define how data is exchanged within or between computers
@@ -73,7 +73,7 @@ What is http protocol?
    - Messages sent by client are called requests
    - Messages sent by server are called responses
 
-What are the http methods?  
+**What are the http methods?**  
 -> Different actions can use the same URI - it's up to the verb(method) to decide what happens.
 
 1. GET
@@ -110,7 +110,7 @@ What are the http methods?
    - Will tell us whether or not we can GET/POST/DELETE the resource
    - Options are typically in response headers
 
-What are status codes?  
+**What are status codes?**  
 -> Status codes tell the consumer of the API whether or not the request worked out as expected, and what is responsible for a failed req
 
 1. Level 200: Success
@@ -130,8 +130,8 @@ What are status codes?
 3. Level 500: Server mistakes
    - 500: Internal server error, server made the mistake and client can't do anything about it
 
-Other things that are important:  
--> naming conventions
+**Other things that are important:**  
+-> Naming conventions
 
 1. Use nouns, not actions
    - A RESTful URI should refer to a resource that is a thing, i.e. api/employees instead of api/getemployees
@@ -139,13 +139,13 @@ Other things that are important:
    - keep it consistent and predictable
 2. Represent hierarchy when naming resources - i.e. api/departments/id/employees
 
--> unchanging URIs
+-> Unchanging URIs
 
 1. Resource URIs should remain same even if back end changes.
    - this is a good reason to not use real database IDs-what if someone has bookmarked api/departments/200?
    - can use GUIDs instead
 
-Richardson Maturity Model  
+**Richardson Maturity Model**  
 -> Grades APIs by their RESTful maturity
 
 1. Level 0: The swamp of plain old XML
@@ -164,7 +164,7 @@ Richardson Maturity Model
    - API supports HATEOAS
    - Example: a GET req to /api/employees would return a list of employees and code/links that drive application state (hypermedia)
 
-To be truly RESTful, must implement HATEOAS:
+**To be truly RESTful, must implement HATEOAS:**
 
 1. Hypermedia as the engine of application state
    - Hypermedia is a generalization of hypertext (links)
