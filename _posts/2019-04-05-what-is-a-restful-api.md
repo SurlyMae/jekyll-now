@@ -26,7 +26,7 @@ Here is a real-life example:
    - In other words, our browser (the HTTP client, remember) has changed **state**
 6. The client changes _state_ depending on _representation_ of the resource we're accessing.
 
-(The HTTP client can be a browser, but often it's an application.)
+The HTTP client can be a browser, but often it's an application.
 
 REST is defined by six constraints (constraints are just design decisions):
 
@@ -60,7 +60,8 @@ REST is defined by six constraints (constraints are just design decisions):
      3. Self-descriptive messages
         - Each message must include enough information to describe how to process the message
 
-REST often uses HTTP protocol, but doesn't have to  
+REST often uses HTTP protocol, but doesn't have to.
+
 What is http protocol?
 
 1. A protocol that allows fetching of resources
@@ -109,15 +110,25 @@ What are the http methods?
    - Will tell us whether or not we can GET/POST/DELETE the resource
    - Options are typically in response headers
 
-what are status codes?  
+What are status codes?  
 -> Status codes tell the consumer of the API whether or not the request worked out as expected, and what is responsible for a failed req
 
 1. Level 200: Success
    - 200: OK
    - 201: Created (resource created)
    - 204: Request OK, but no content returned
-2. Level 400
-3. Level 500
+2. Level 400: Client mistakes
+   - 400: Bad request, req sent to the server is wrong
+   - 401: Unauthorized, no or invalid authentication details were provided
+   - 403: Forbidden, authentication succeeded but user doesn't have access to resource
+   - 404: Requested resource doesn't exist
+   - 405: Method not allowed, like trying to send a req to a URI with POST method, but only GET is implemented
+   - 406: Not acceptable, a consumer might request XML media type while API only supports JSON
+   - 409: Conflict, like a conflict in request vs current state of resource (i.e. editing a version of a resource which has been renewed since editing started); also used when trying to create a resource that already exists.
+   - 415: Unsupported media type, sort of opposite of 406
+   - 422: Unprocessable entity, semantic mistakes, usually related to validation
+3. Level 500: Server mistakes
+   - 500: Internal server error, server made the mistake and client can't do anything about it
 
 Other things that are important:  
 -> naming conventions
