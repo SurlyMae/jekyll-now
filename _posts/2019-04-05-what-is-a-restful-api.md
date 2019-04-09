@@ -66,7 +66,7 @@ What is http protocol?
 1. A protocol that allows fetching of resources
    - A protocol is just a set of rules that define how data is exchanged within or between computers
 2. Foundation of any data exchange on the web
-3. Client-server protoco
+3. Client-server protocol
    - Requests initiated by recipient
    - Clients and servers communicate by exchanging individual messages as opposed to a stream of data
    - Messages sent by client are called requests
@@ -76,12 +76,31 @@ What are the http methods?
 -> Different actions can use the same URI - it's up to the verb(method) to decide what happens.
 
 1. GET
-   - Reading resources
+   - Used for reading resources
    - No request payload
+   - Sample URI: api/employees, api/employees/{employeedId}
+   - Response payloads: employees collection, single employee
 2. POST
+   - Used for creating a resource
+   - Request payload: single employee
+   - Sample URI: api/employees
+   - Response payload: single employee
 3. PUT
+   - Used for updating resources (full updates)
+   - Request payload: single employee
+     - Should include all fields related to the employee. If a value is missing, default values should apply
+   - Sample URI: api/employees/{employeeId}
+   - Response payload: single updated employee or empty
 4. PATCH
+   - Used for partial updates
+   - Request payload: JSON patch document on employee
+   - Sample URI: /api/employees/{employeeId}
+   - Response payload: single updated employee or empty
 5. DELETE
+   - Used to remove a resource
+   - Request payload: none
+   - Sample URI: /api/employees/{employeeId}
+   - Response payload: none
 6. HEAD
 7. OPTIONS
 
