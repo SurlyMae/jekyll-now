@@ -60,8 +60,14 @@ REST is defined by six constraints (constraints are just design decisions):
      3. Self-descriptive messages
         - Each message must include enough information to describe how to process the message
 
-REST often uses HTTP protocol
--> what is http protocol?
+REST often uses HTTP protocol, but doesn't have to  
+What is http protocol?
+
+1. A protocol that allows fetching of resources
+   - A protocol is just a set of rules that define how data is exchanged within or between computers
+2. Foundation of any data exchange on the web
+3. Client-server protocol - Requests initiated by recipient - Clients and servers communicate by exchanging individual messages as opposed to a stream of data - Messages sent by client are called requests - Messages sent by server are called responses
+
 What are the http methods?
 -> Different actions can use the same URI - it's up to the verb(method) to decide what happens.
 
@@ -72,21 +78,27 @@ What are the http methods?
 5. DELETE
 6. HEAD
 7. OPTIONS
-   -> what are the status codes?
-8. Level 200
-9. Level 400
-10. Level 500
-    Other things that are important:
-    -> naming conventions
-11. Use nouns, not actions
-    - A RESTful URI should refer to a resource that is a thing, i.e. api/employees instead of api/getemployees
-    - using nouns conveys meaning - it should describe resource
-    - keep it consistent and predictable
-12. Represent hierarchy when naming resources - i.e. api/departments/id/employees
-    -> unchanging URIs
-13. Resource URIs should remain same even if back end changes.
-    - this is a good reason to not use real database IDs-what if someone has bookmarked api/departments/200?
-    - can use GUIDs instead
+
+what are the status codes?
+
+1. Level 200
+2. Level 400
+3. Level 500
+
+Other things that are important:
+-> naming conventions
+
+1. Use nouns, not actions
+   - A RESTful URI should refer to a resource that is a thing, i.e. api/employees instead of api/getemployees
+   - using nouns conveys meaning - it should describe resource
+   - keep it consistent and predictable
+2. Represent hierarchy when naming resources - i.e. api/departments/id/employees
+
+-> unchanging URIs
+
+1. Resource URIs should remain same even if back end changes.
+   - this is a good reason to not use real database IDs-what if someone has bookmarked api/departments/200?
+   - can use GUIDs instead
 
 Richardson Maturity Model
 -> Grades APIs by their RESTful maturity
