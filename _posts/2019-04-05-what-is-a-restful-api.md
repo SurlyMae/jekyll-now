@@ -78,7 +78,7 @@ What are the http methods?
 1. GET
    - Used for reading resources
    - No request payload
-   - Sample URI: api/employees, api/employees/{employeedId}
+   - Sample URI: api/employees, api/employees/{employeeId}
    - Response payloads: employees collection, single employee
 2. POST
    - Used for creating a resource
@@ -102,15 +102,24 @@ What are the http methods?
    - Sample URI: /api/employees/{employeeId}
    - Response payload: none
 6. HEAD
+   - Identical to GET, but no response body should be returned
+   - Used to obtain info on resource, like testing if a resource exists
 7. OPTIONS
+   - Represents a request for info about the communication options available on that URI
+   - Will tell us whether or not we can GET/POST/DELETE the resource
+   - Options are typically in response headers
 
-what are the status codes?
+what are status codes?  
+-> Status codes tell the consumer of the API whether or not the request worked out as expected, and what is responsible for a failed req
 
-1. Level 200
+1. Level 200: Success
+   - 200: OK
+   - 201: Created (resource created)
+   - 204: Request OK, but no content returned
 2. Level 400
 3. Level 500
 
-Other things that are important:
+Other things that are important:  
 -> naming conventions
 
 1. Use nouns, not actions
@@ -125,7 +134,7 @@ Other things that are important:
    - this is a good reason to not use real database IDs-what if someone has bookmarked api/departments/200?
    - can use GUIDs instead
 
-Richardson Maturity Model
+Richardson Maturity Model  
 -> Grades APIs by their RESTful maturity
 
 1. Level 0: The swamp of plain old XML
