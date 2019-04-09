@@ -5,7 +5,7 @@ title: What is a RESTful API?
 
 _It's in job ads everywhere: employers looking for developers with experience in building RESTful APIs. What does REST mean and what does it take for an API to be considered RESTful?_
 
-REST is a way to build a web service. Think of a web service as a common platform that allows communication between client and server applications. So, REST is just a way to do that! It's an architectural style, and it stands for _Representational State Transfer_. [Roy Fielding](http://roy.gbiv.com/), [who gave us REST](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm), explains it like this:
+**REST is a way to build a web service.** Think of a web service as a common platform that allows communication between client and server applications. So, REST is just a way to do that! It's an architectural style, and it stands for _Representational State Transfer_. [Roy Fielding](http://roy.gbiv.com/), [who gave us REST](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm), explains it like this:
 
 > "REST is intended to evoke an image of how a well-designed web app
 > behaves: A network of web pages (a virtual state-machine) where the
