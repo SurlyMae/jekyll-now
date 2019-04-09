@@ -61,17 +61,35 @@ REST is defined by six constraints (constraints are just design decisions):
         - Each message must include enough information to describe how to process the message
 
 REST often uses HTTP protocol
--what is http protocol?
--what are the http methods?
+-> what is http protocol?
+What are the http methods?
+-> Different actions can use the same URI - it's up to the verb(method) to decide what happens.
 
-Things that are important:
--status codes
--naming conventions
--unchanging URIs
+1. GET
+2. POST
+3. PUT
+4. PATCH
+5. DELETE
+6. HEAD
+7. OPTIONS
+   -> what are the status codes?
+8. Level 200
+9. Level 400
+10. Level 500
+    Other things that are important:
+    -> naming conventions
+11. Use nouns, not actions
+    - A RESTful URI should refer to a resource that is a thing, i.e. api/employees instead of api/getemployees
+    - using nouns conveys meaning - it should describe resource
+    - keep it consistent and predictable
+12. Represent hierarchy when naming resources - i.e. api/departments/id/employees
+    -> unchanging URIs
+13. Resource URIs should remain same even if back end changes.
+    - this is a good reason to not use real database IDs-what if someone has bookmarked api/departments/200?
+    - can use GUIDs instead
 
 Richardson Maturity Model
-
-- Grades APIs by their RESTful maturity
+-> Grades APIs by their RESTful maturity
 
 1. Level 0: The swamp of plain old XML
    - HTTP protocol is used for remote interaction, but the rest of the protocol isn't used how it should be.
@@ -96,3 +114,8 @@ To be truly RESTful, must implement HATEOAS:
    - Drives how to consume, use the API
    - Allows for a self-documenting API
    - Example: User asks API for list of departments, API sends back the list along with links for what the user can do next - there could be a link that says, 'Show all employees for this department' or 'Edit this department'
+2. Without HATEOAS, intrinsic knowledge of the API contract is required, often obtained through documentation
+   - Consumers have to know too much
+   - A rule change or addition breaks consumers of the API
+   - API cannot evolve separately
+3. Links to what options are available would be put in the response body, using method/rel/href attributes
