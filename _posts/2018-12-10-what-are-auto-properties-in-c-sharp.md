@@ -6,6 +6,8 @@ title: What are automatic properties in C#?
 `public int Name { get; set; }`
 _Ever seen C# code like this and wondered what's going on? I've got you covered._
 
+**_This post still in draft mode_**
+
 One of the pillars of object-oriented programming (OOP) is encapsulation. We can think of encapsulation in two ways: First, when we're designing classes, how do we 'hide' the details of the code from those who don't need to see it? And second, how do we protect the data belonging to each object?
 
 Let's look at a traditional way of implementing encapsulation.
