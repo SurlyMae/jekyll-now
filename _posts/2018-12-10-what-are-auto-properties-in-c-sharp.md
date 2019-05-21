@@ -3,7 +3,7 @@ layout: post
 title: What are automatic properties in C#?
 ---
 
-`public int Name { get; set; }`
+`public int Name { get; set; }`  
 _Ever seen C# code like this and wondered what's going on? I've got you covered._
 
 **_This post still in draft mode_**
