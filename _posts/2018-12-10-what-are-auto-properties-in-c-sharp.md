@@ -20,4 +20,4 @@ Now, let's do our first rewrite:
 
 <script src="https://gist.github.com/SurlyMae/891916083a117d1ddd8bdf2cff672db5.js"></script>
 
-Moving top down, let's look at the things we've changed. The constructor is different - instead of `this.id = id`, we now see `StudentId = id`. Um, where in the heck did `StudentId` come from?
+Moving top down, let's look at the things we've changed. The constructor is different - instead of `this.id = id`, we now see `StudentId = id`. Um, where in the heck did `StudentId` come from? Take a look just below the constructor, where you'll see `public int StudentId { ... }`. At first glance this looks like a public method called `StudentId` and returning an `int`, but notice that there are no parentheses following `StudentId`. In C#, this is a property and it represents a private field. It provides a 'shorthand' way of writing getters and setters.
