@@ -15,3 +15,9 @@ Let's look at a traditional way of implementing encapsulation.
 <script src="https://gist.github.com/SurlyMae/77770f5492632387a089a3538d579654.js"></script>
 
 Since I currently work in higher ed, I've created a Student class. Each student has an id, a first and last name, and a preferred first name. We declare these as private so that other objects can't access them directly. Then we provide public methods for getting and setting those private values - now other objects can access the information, but in a way that the student object controls.
+
+Now, let's do our first rewrite:
+
+<script src="https://gist.github.com/SurlyMae/891916083a117d1ddd8bdf2cff672db5.js"></script>
+
+Moving top down, let's look at the things we've changed. The constructor is different - instead of `this.id = id`, we now see `StudentId = id`. Um, where in the heck did `StudentId` come from?
