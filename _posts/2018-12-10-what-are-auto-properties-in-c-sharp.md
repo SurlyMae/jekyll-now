@@ -24,5 +24,6 @@ Now, let's do our first rewrite:
 Moving top down, let's look at the things we've changed. The constructor is different - instead of `this.id = id`, we now see `StudentId = id`. Um, where in the heck did `StudentId` come from? Take a look just below the constructor, where you'll see `public int StudentId { ... }`. At first glance this looks like a public method called `StudentId` and returning an `int`, but notice that there are no parentheses following `StudentId`. In C#, this is a property and it represents a private field. It provides a shorthand way of writing getters and setters. So, in the constructor, when we see `StudentId = id`, what's happening is this:
 
 1. When a student object is initialized, the constructor is called.
-2. The constructor grabs the id parameter being passed in and tries to set StudentId to id's value (line 13).
-3. The constructor looks for StudentId, and finds it on line 19. The setter is hit, and
+2. The constructor grabs the id parameter being passed in (let's say it's '1234') and tries to set `StudentId` to 1234 (line 13).
+3. The constructor looks for `StudentId`, and finds it on line 19. The setter on line 23 is hit, and `id` is set to 1234. Now, _this_ `id` is the `private int id` from line 6, _not_ the id parameter passed in to the constructor.
+4. So now `private int id` is set to 1234. BOOM.
