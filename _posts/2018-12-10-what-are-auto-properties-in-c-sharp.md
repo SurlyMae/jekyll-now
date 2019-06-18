@@ -32,11 +32,11 @@ Moving top down, let's look at the things we've changed. The constructor is diff
 
 And then the constructor just keeps going, and repeats the process for the other property names.
 
-With this rewrite, we've gotten rid of some lines of code, which is almost always beneficial. Can we get rid of even more code by simplifying this class further? Hmm, let's see:
+With this rewrite, we've gotten rid of some lines of code, which is usually beneficial. Can we get rid of even more code by simplifying this class further? Hmm, let's see:
 
 <script src="https://gist.github.com/SurlyMae/8553dd325ee5b4e709e148ec46d427ae.js"></script>
 
-The constructor looks the same, but we've now replaced _most_ of the private data fields (lines 5-11) with properties.
+The constructor looks the same, but we've now replaced _most_ of the private data fields (lines 5-11) with properties. Lines 19-25 from the first rewrite have been replaced by line 8 in this rewrite, lines 43-47 have been replaced by line 9, and lines 49-53 have been replaced by line 10. Lines 27-41 have been replaced by lines 11-25, and that code is mostly the same, except for one thing - can you spot the difference?
 
 A gotcha!:
 
