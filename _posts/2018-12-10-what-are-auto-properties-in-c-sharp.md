@@ -11,6 +11,8 @@ _Ever seen C# code like this and wondered what's going on? I've got you covered.
 
 One of the pillars of object-oriented programming (OOP) is encapsulation. We can think of encapsulation in two ways: First, when we're designing classes, how do we 'hide' the details of the code from those who don't need to see it? And second, how do we protect the data belonging to each object?
 
+So why are we starting off by discussing encapsulation when this post is supposed to be about automatic properties? Because automatic properties provide simpler encapsulation!
+
 Let's look at a traditional way of implementing encapsulation:
 
 <script src="https://gist.github.com/SurlyMae/77770f5492632387a089a3538d579654.js"></script>
@@ -29,3 +31,7 @@ Moving top down, let's look at the things we've changed. The constructor is diff
 4. So now `private int id` is set to `1234`. BOOM.
 
 And then the constructor just keeps going, and repeats the process for the other property names.
+
+With this rewrite, we've gotten rid of some lines of code, which is almost always beneficial. Can we get rid of even more code by simplifying this class further? Hmm, let's see:
+
+<script src="https://gist.github.com/SurlyMae/8553dd325ee5b4e709e148ec46d427ae.js"></script>
