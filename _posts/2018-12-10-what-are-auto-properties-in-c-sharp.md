@@ -35,3 +35,9 @@ And then the constructor just keeps going, and repeats the process for the other
 With this rewrite, we've gotten rid of some lines of code, which is almost always beneficial. Can we get rid of even more code by simplifying this class further? Hmm, let's see:
 
 <script src="https://gist.github.com/SurlyMae/8553dd325ee5b4e709e148ec46d427ae.js"></script>
+
+The constructor looks the same, but we've now replaced _most_ of the private data fields (lines 5-11) with properties.
+
+A gotcha!:
+
+<script src="https://gist.github.com/SurlyMae/f1adb62a52a4f1b4c587409b444694dc.js"></script>
