@@ -23,7 +23,7 @@ Now, let's do our first rewrite:
 
 <script src="https://gist.github.com/SurlyMae/891916083a117d1ddd8bdf2cff672db5.js"></script>
 
-Moving top down, let's look at the things we've changed. The constructor is different - instead of `this.id = id`, we now see `StudentId = id`. Um, where in the heck did `StudentId` come from? Take a look just below the constructor, where you'll see `public int StudentId { ... }`. At first glance this looks like a public method called `StudentId` and returning an `int`, but notice that there are no parentheses following `StudentId`. In C#, this is a property and it represents a private field. It provides a shorthand way of writing getters and setters. So, in the constructor, when we see `StudentId = id`, what's happening is this:
+Moving top down, let's look at the things we've changed. The constructor is different - instead of `this.id = id`, we now see `StudentId = id`. Um, where in the heck did `StudentId` come from? Take a look just below the constructor, where you'll see `public int StudentId { ... }`. At first glance this looks like a public method called `StudentId` and returning an `int`, but notice that there are no parentheses following `StudentId`. In C#, this is a property and it represents a private field - in this case, it is representing the `private int id` field. It also provides a shorthand way of writing getters and setters. Notice that lines 18-26 in the traditional example have been replaced by lines 19-25 in this first rewrite. So, in the constructor, when we see `StudentId = id`, what's happening is this:
 
 1. When a student object is initialized, the constructor is called.
 2. The constructor grabs the id parameter being passed in (let's say it's '1234') and tries to set `StudentId` to `1234` (line 13).
@@ -36,7 +36,7 @@ With this rewrite, we've gotten rid of some lines of code, which is usually bene
 
 <script src="https://gist.github.com/SurlyMae/8553dd325ee5b4e709e148ec46d427ae.js"></script>
 
-The constructor looks the same, but we've now replaced _most_ of the private data fields (lines 5-11) with properties. Lines 19-25 from the first rewrite have been replaced by line 8 in this rewrite, lines 43-47 have been replaced by line 9, and lines 49-53 have been replaced by line 10. Lines 27-41 have been replaced by lines 11-25, and that code is mostly the same, except for one thing - can you spot the difference?
+The constructor looks the same, but we've now replaced _most_ of the private data fields (lines 5-11) with properties. Lines 19-25 from the first rewrite have been replaced by line 8 in this rewrite, lines 43-47 have been replaced by line 9, and lines 49-53 have been replaced by line 10. Lines 27-41 have been replaced by lines 11-25, and that code is mostly the same as before, except for one thing - can you spot the difference?
 
 A gotcha!:
 
