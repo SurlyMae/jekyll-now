@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is a RESTful API?
+title: /Notes/ What is a RESTful API?
 ---
 
 _It's in job ads everywhere: employers looking for developers with experience in building RESTful APIs. What does REST mean and what does it take for an API to be considered RESTful?_
