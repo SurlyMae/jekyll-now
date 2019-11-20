@@ -3,9 +3,7 @@ layout: post
 title: /Blog/ What are automatic properties in C#?
 ---
 
-`public int Name { get; set; }`
-
-_Ever seen C# code like this and wondered what's going on? I've got you covered._
+_Ever seen C# code like this and wondered what's going on? `public int Name { get; set; }` I've got you covered._
 
 **_This post still in draft mode_**
 
