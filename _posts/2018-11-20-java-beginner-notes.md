@@ -58,3 +58,39 @@ _Beginner notes from CompSci 101_
 - You can change the actual object values when passing in a class type variable to a method; you cannot replace the object, however
 
 **Constructors:**
+- Methods used to create a new object.
+- Meant to perform initializing actions.
+- It is normal practice to explicitly give values to all instance variables in a constructor
+- Constructor can call methods within its class. Make the method called by the constructor private.
+- You can call constructors from a constructor. Must be the first action taken within a constructor.
+
+**Static variables & methods:**
+- Belong to the class and not the object
+- Static variables that aren't constants should normally be private.
+- Also known as class variables
+- Can allow objects to communicate with each other
+- Static methods should be used when method has no relation to any object.
+- Static methods cannot reference instance variables. They don't need an object to be instantiated to use them, so they don't have an object's instance variable to refer to. Cannot call a non-static method without first creating an object to reference that method.
+
+**Overloading:**
+- Giving two or more methods the same name within the same class; they must each have something different about their parameter lists.
+- Java tries to use overloading before it tries to use automatic type conversion
+- You cannot overload on basis of return type.
+
+**Inheritance:**
+- Allows you to define a very general class & then later define more specialized classes that add some new details to the existing general class definition.
+    - Derived class (aka subclass):
+        - A class defined by adding instance variables & methods to an existing class. Extends the existing class. Existing class that the derived class is built upon is called the base class or superclass.
+        - Private instance variables of the superclass are not directly accessible from derived classes.
+        - Does not inherit constructors from the base class, it has its own. Calling a constructor from the base class uses the word `super`. `this` calls a constructor of the same class, while `super` invokes a constructor of the base class.
+        - You can assign an object of a class to a variable of any ancestor type, but not the other way around.
+    - Is-a:
+        - Use inheritance only if an 'is-a' relationship exists between a class and a proposed derived class (i.e. a student is a person, so student can inherit from person)
+    - Overriding methods:
+        - Derived classes can override methods in the parent class.
+        - Method heading, return type, number of parameters has to be the same, but the method body can be different. This method definition is then the one used for objects of the derived class.
+    - Prohibit overriding:
+        - You can add the `final` modifier to a method heading to keep derived classes from overriding it. You can also mark a class as final, which prohibits using it as a superclass. If a constructor calls a public method, mark the public method as `final`.
+
+
+
