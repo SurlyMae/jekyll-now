@@ -92,5 +92,18 @@ _Beginner notes from CompSci 101_
     - Prohibit overriding:
         - You can add the `final` modifier to a method heading to keep derived classes from overriding it. You can also mark a class as final, which prohibits using it as a superclass. If a constructor calls a public method, mark the public method as `final`.
 
+**Enumerations:**
+- An enumeration lists the values that a variable can have (i.e. `enum GRADE {A, B, C}`)
+- Acts as a class type (i.e. `GRADE finalGrade = GRADE.A`)
+- Enumeration values behave much like named constants, so use same naming convention (all caps)
+- An enumeration is actually a class. You typically define it within another class, but outside method definitions.
+- The compiler creates a class when it encounters an enumeration
+    - example: `enum SUIT {CLUBS, DIAMONDS}`: Compiler creates a class `SUIT`. The enumerated values are names of public static objects whose type is `SUIT`
+- You can define private instance variables, public methods, constructors for any enum.
+- Enums can be private or public.
+
+**Packages:**
+
+
 
 
