@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is dependency injection?
+title: (Post) What is dependency injection?
 ---
 
 _Dependency injection is a principle of object-oriented programming. But what does it actually mean?_

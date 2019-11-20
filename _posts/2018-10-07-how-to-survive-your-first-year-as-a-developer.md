@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Post / So you're a developer now! Here's how to survive.
+title: (Post) So you're a developer now! Here's how to survive.
 ---
 
 _This is a version of a talk I gave at a meetup in [Silicon Slopes](https://newsroom.siliconslopes.com/about-silicon-slopes-3/), Utah._
