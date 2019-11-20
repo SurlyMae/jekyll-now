@@ -1,6 +1,6 @@
 ---
 layout: post
-title: | Post | What are containers?
+title: /Blog/ What are containers?
 ---
 
 _Containers seem to be the hot new term lately. What are they?_
