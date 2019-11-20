@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (Post) What are automatic properties in C#?
+title: /Post/ What are automatic properties in C#?
 ---
 
 `public int Name { get; set; }`
