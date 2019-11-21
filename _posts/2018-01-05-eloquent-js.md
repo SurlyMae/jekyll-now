@@ -30,4 +30,14 @@ _Notes from reading Marijn Haverbeke's [Eloquent JavaScript](http://eloquentjava
 - `let` variable may be reassigned
 - `let` also signals that variable will only be used in the block its defined in
 - both `const` and `let` are local to the block they are declared in, while in pre-2015 JS, a `var` binding could be seen throughout the whole function
+
+**Scope:**
+- scopes can look out into the scope around it, can't look in
+- if multiple bindings have same name however, only innermost one can be seen. Example:
+```
+const halve = function(n) { return n/2 }
+let n = 2
+halve(100) = 50
+console.log(n) logs 10
+```
     
