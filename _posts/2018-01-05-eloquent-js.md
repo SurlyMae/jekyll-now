@@ -40,4 +40,37 @@ let n = 2
 halve(100) = 50
 console.log(n) logs 10
 ```
+
+**Lexical scoping:**
+- Describes how a parser resolves variable names when functions are nested
+- the word lexical refers to the fact that lexical scoping uses the location where a variable is declared to determine where that variable is available
+- Actual definition of lexical:
+    - "of or relating to words or the vocab of a language as distinguished from its grammar and construction"
+    - "a dictionary provides lexical information, it tells you what a words means and not all there is to know about that word"
+- So we could say lexical is about how the word (variable) relates to the words (code) around it. Lexical scoping is like the context of a variable. What is the variable's meaning here, in this context? Visible. What is its meaning in this other context? Not useable.
+
+**Callstack:**
+- Because a function has to jump back to the place that called it when it returns, the computer must remember the context from which the call happened.
+- Context is stored in the callstack.
+- Every time a function is called, the current context is stored on top of this stack.
+- When a function returns, it removes the top context from the stack and uses that context to continue execution.
+
+**Closures:**
+- combination of a function and the lexical environment within which that function was declared
+- This environment consists of any local variables that were in scope at the time the closure was created
+- kind of like referring to an instance of an inner function created when outer function is ran. The instance of the inner function maintains a reference to its lexical environment.
+- Closure recipe:
+    1. Create your parent function (i.e. the `checkScope` function)
+    2. Define some variables in the parent's local scope (can be accessed by child function) (i.e. `var innerVar = "local scope"`)
+    3. Define a function inside the parent function. this is a child (i.e. the `innerFunc` function)
+    4. Return that function from inside the parent function (i.e. `return innerFunc`)
+    ```
+    function checkScope() {
+        var innerVar = "local scope"
+        function innerFunc() {
+            return innerVar
+        }
+        return innerFunc
+    }
+    ```
     
