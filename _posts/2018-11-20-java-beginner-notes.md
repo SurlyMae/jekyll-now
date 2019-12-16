@@ -105,3 +105,7 @@ _Beginner notes from CompSci 101_
 **Packages:**
 - A named collection of related classes that can serve as a library of classes for use in any program. With packages, you do not need to place all those classes in the same directory as your program.
 - A package is simply a collection of classes that have been grouped together in a folder. The name of the folder is the name of the package. The classes in the package are each placed in a separate file, and the file name begins with the name of the class.
+
+**.class:**
+- `.class` is used when there isn't an instance of the class available
+- "Refers to the class itself, rather than an instance of the class. A compiled `.java` file is a `.class` file. They do this because of Type Erasure. Something that Java does that .NET doesn't. If they did `getForObject<T>` that `T` is only known at compile time. This is so that it exists at compile time as well."
