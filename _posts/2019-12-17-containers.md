@@ -31,7 +31,7 @@ _Let's learn more about these, shall we?_
 - Data needs to be persisted in Docker for most apps, or the data won't exist after the container is shut down
     - Containers are short-term, and once a container is removed, the data is gone
 
-From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-docker)
+From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-docker):
 - Docker file system works like this:
     - Docker images are stored as a series of read-only layers.
     - When a container is started up, Docker takes the read-only image and adds a read-write layer on top
