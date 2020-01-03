@@ -27,10 +27,27 @@ _We've started implementing these over the last couple of months at work. Intere
     - [more detail here](https://lwc.dev/guide/reference#modules)
 
 **Composition:**
-- Owners / containers
-- To communicate down the component hierarchy, an owner component can access a child component's public properties
-- To communicate down the component hierarchy, owner and parent components can call JS methods on child components
+- Owner
+    - The component that owns the template
+    - Controls all the composed components it contains.
+    - Can set public properties on, call public methods on, and listen for events dispatched by composed components
+- Container
+    - Contains other components but itself is contained within the owner component
+    - less powerful than the owner
+    - can:
+        - read but not change public properties in contained components
+        - call public methods on composed components
+        - listen for some but not necessarily all events bubbled up by components that it contains
+- Parent/child
+    - a parent component contains a child component
+    - a parent component can be the owner or a container
 - To communicate down the containment hierarchy, use properties. To communicate up the containment hierarchy, fire an event in a child component and handle it in an owner or container component
+- To communicate down the component hierarchy, an owner component can access a child component's public properties
+    - An owner can set a property or attribute on a child component
+    - An attribute in HTML turns into a property assignment in JS
+    - examples [here](https://lwc.dev/guide/composition#set-a-property-on-a-child-component)
+- To communicate down the component hierarchy, owner and parent components can call JS methods on child components
+
 
 **Patterns:**
 - Use `getters` to compute a value
@@ -71,7 +88,7 @@ _We've started implementing these over the last couple of months at work. Intere
             - to add new items to a data set, use a private property to track and generate keys
             - to assign a key to every element in the list, use the `key={uniqueId}` directive
 - <ins>Rendering HTML conditionally:</ins>
-    - [`if:true|false ={property}`](https://lwc.dev/guide/html_templates#render-html-conditionally)
+    - [`if:true|false={property}`](https://lwc.dev/guide/html_templates#render-html-conditionally)
         - add this directive to a nested `<template>` tag that encloses the conditional content
         - this directive binds `{property}` to the template and removes/inserts DOM elements based on whether `{property}` is truthy or falsy
 
