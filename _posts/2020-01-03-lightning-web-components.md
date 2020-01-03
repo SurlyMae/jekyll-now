@@ -3,7 +3,7 @@ layout: post
 title: /Notes/ Lightning Web Components (Salesforce)
 ---
 
-_We've started implementing these over the last couple of months at work. Really interesting._
+_We've started implementing these over the last couple of months at work. Interesting!_
 
 **Summary:**
 - Salesforce (SF) implementation of lightweight frameworks built on web standards
@@ -31,7 +31,7 @@ _We've started implementing these over the last couple of months at work. Really
 - If we remove `@api` the property still binds to the HTML template, but it's private
 
 **Directives:**
-- Rendering Lists:
+- <ins>Rendering Lists:</ins>
     - [`for:each`](https://lwc.dev/guide/html_templates#for%3Aeach)
         - used to render an array
         - add it to the nested `<template>` tag that encloses the HTML elements you want to repeat
@@ -57,7 +57,7 @@ _We've started implementing these over the last couple of months at work. Really
             - assign unique keys to an incoming data set
             - to add new items to a data set, use a private property to track and generate keys
             - to assign a key to every element in the list, use the `key={uniqueId}` directive
-- Rendering HTML conditionally:
+- <u>Rendering HTML conditionally:</u>
     - [`if:true|false ={property}`](https://lwc.dev/guide/html_templates#render-html-conditionally)
         - add this directive to a nested `<template>` tag that encloses the conditional content
         - this directive binds `{property}` to the template and removes/inserts DOM elements based on whether `{property}` is truthy or falsy
