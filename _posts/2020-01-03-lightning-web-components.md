@@ -17,13 +17,31 @@ _We've started implementing these over the last couple of months at work. Really
         - `@api`: makes the property public so other components can set it. If we remove `@api` the property still binds to the HTML template, but it's private
     - modules
     - directives
-        - `for:each`
+        - [`for:each`](https://lwc.dev/guide/html_templates#for%3Aeach)
             - used to render an array
             - add it to the nested `<template>` tag that encloses the HTML elements you want to repeat
             - to access current item, use `for:item="currentItem`
             - to access current item's index, use `for:index="index"`
         - `iterator`
+            - use to apply a special behavior to the first or last item in a list: `iterator:iteratorName={array}`
+            - add `iterator` directive to a nested `<template>` tag that encloses the HTML elements you want to repeat
+            - use `iteratorName` to access these properties:
+                - value
+                    - the value of the item in the list
+                    - use this property to access the properties of the array, i.e. `iteratorName.value.propertyName`
+                - index
+                    - the index of the item in the list
+                - first
+                    - a boolean value indicating whether this item is the first item in the list
+                - last
+                    - a boolean value indicating whether this item is the last item in the list
+
         - must use a `key` directive to assign a unique ID to each item. When a list changes, the framework uses the `key` to re-render only the item that changed.
+            - key must be a string or number
+            - can't use `index` as a value for `key`
+            - assign unique keys to an incoming data set
+            - to add new items to a data set, use a private property to track and generate keys
+            - to assign a key to every element in the list, use the `key={uniqueId}` directive
 - Provides a layer of specialized SF services on top of the core stack:
     - Base Lightning Components
         - a set of over 70 UI components all built as custom elements
