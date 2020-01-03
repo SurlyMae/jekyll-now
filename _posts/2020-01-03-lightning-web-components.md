@@ -19,8 +19,18 @@ _We've started implementing these over the last couple of months at work. Intere
 - Let LWCs manipulate the DOM instead of writing JS to do it.
 - Leverages custom elements, templates, shadow DOM, decorators, modules
 
+**Component Bundles**
+- a UI component's folder can contain other JS files used to share code. 
+    - these utility JS files must be ES6 modules and must have names that are unique within the component's folder.
+- To share code between components, create an ES6 module and export the variables/functions that you want to expose. 
+    - module folder and file name must follow same naming conventions
+    - [more detail here](https://lwc.dev/guide/reference#modules)
+
 **Composition:**
 - Owners / containers
+- To communicate down the component hierarchy, an owner component can access a child component's public properties
+- To communicate down the component hierarchy, owner and parent components can call JS methods on child components
+- To communicate down the containment hierarchy, use properties. To communicate up the containment hierarchy, fire an event in a child component and handle it in an owner or container component
 
 **Patterns:**
 - Use `getters` to compute a value
@@ -28,7 +38,10 @@ _We've started implementing these over the last couple of months at work. Intere
 
 **Decorators:**
 - `@api`: makes the property public so other components can set it. 
-- If we remove `@api` the property still binds to the HTML template, but it's private
+    - public properties define the API for a component
+    - If we remove `@api` the property still binds to the HTML template, but it's private
+    - public props are reactive
+    - also use `@api` for exposing public methods
 
 **Directives:**
 - <ins>Rendering Lists:</ins>
@@ -57,7 +70,7 @@ _We've started implementing these over the last couple of months at work. Intere
             - assign unique keys to an incoming data set
             - to add new items to a data set, use a private property to track and generate keys
             - to assign a key to every element in the list, use the `key={uniqueId}` directive
-- <u>Rendering HTML conditionally:</u>
+- <ins>Rendering HTML conditionally:</ins>
     - [`if:true|false ={property}`](https://lwc.dev/guide/html_templates#render-html-conditionally)
         - add this directive to a nested `<template>` tag that encloses the conditional content
         - this directive binds `{property}` to the template and removes/inserts DOM elements based on whether `{property}` is truthy or falsy
