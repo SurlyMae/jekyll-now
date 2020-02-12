@@ -42,3 +42,21 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
     - Docker data volumes are directories/files outside of the default Union File System and exist as normal directories/files on the host filesystem
 
 [Cool guide to Kubernetes](https://azure.microsoft.com/en-us/resources/videos/the-illustrated-children-s-guide-to-kubernetes/)
+
+**Lower-level notes:**
+- Docker is a DevOps tool for putting your apps into containers
+- You can run the containers anywhere
+- Everywhere you run a container, the environment will be identical
+- A container image is a lightweight, standalone, executable package of a piece of software that includes everything needed to run it.
+- Docker helps reduce conflicts between teams running different software on the same infrastructure
+- Even within one web application, you can run each service (and all of its particular libraries/dependencies) in its own separate container
+- OSs consist of two parts: the kernel and a set of software
+    - the kernel is responsible for interacting with the underlying hardware
+    - the software makes the OSs different from each other - it includes the UI, compilers, drivers, file managers, dev tools, etc.
+    - docker containers share the kernel - so a docker container hosted on an Ubuntu OS can use any flavor of Linux on top of it (Linux is the kernel, Ubuntu is a flavor or Linux and what makes it a flavor is its own set of software), the docker containers have the software part of the Linux OSs in them.
+- Commands:
+    - run: starts a container `docker run nginx`
+    - ps: lists running containers `docker ps`
+    - ps -a: lists all containers `docker ps -a`
+    - stop: stops a container `docker stop my_container`
+    - rm: removes a container `docker rm my_container`
