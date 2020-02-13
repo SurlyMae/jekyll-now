@@ -41,6 +41,7 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
     - Docker calls this combo of read-only layers w/ read-write layer on top a Union File System.
     - Docker data volumes are directories/files outside of the default Union File System and exist as normal directories/files on the host filesystem
 
+
 [Cool guide to Kubernetes](https://azure.microsoft.com/en-us/resources/videos/the-illustrated-children-s-guide-to-kubernetes/)
 
 **Lower-level notes:**
@@ -54,9 +55,19 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
     - the kernel is responsible for interacting with the underlying hardware
     - the software makes the OSs different from each other - it includes the UI, compilers, drivers, file managers, dev tools, etc.
     - docker containers share the kernel - so a docker container hosted on an Ubuntu OS can use any flavor of Linux on top of it (Linux is the kernel, Ubuntu is a flavor or Linux and what makes it a flavor is its own set of software), the docker containers have the software part of the Linux OSs in them.
+- A container only runs as long as the process that's inside it is alive
 - Commands:
     - run: starts a container `docker run nginx`
     - ps: lists running containers `docker ps`
     - ps -a: lists all containers `docker ps -a`
     - stop: stops a container `docker stop my_container`
     - rm: removes a container `docker rm my_container`
+    - images: lists images available on host `docker images`
+    - rmi: removes image `docker rmi nginx` (ensure no containers are running off this image before removing)
+    - pull: downloads an image, stores it on host `docker pull nginx`
+    - exec: execute a command on a running container `docker exec my_container cat /etc/hosts` (prints the contents of the etc/hosts file)
+
+
+
+
+[Resource](https://www.youtube.com/watch?v=fqMOX6JJhGo)
