@@ -58,6 +58,8 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
 - A container only runs as long as the process that's inside it is alive
 - Commands:
     - run: starts a container `docker run nginx`
+        - attached: runs container in foreground (attached to console/standard out of container), you'll see output of service on screen, can't do anything else in that terminal until container stops `docker run my_container/my_service`
+        - detached: runs container in background mode so you can get your terminal prompt `docker run -d my_container/my_service`
     - ps: lists running containers `docker ps`
     - ps -a: lists all containers `docker ps -a`
     - stop: stops a container `docker stop my_container`
@@ -65,7 +67,8 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
     - images: lists images available on host `docker images`
     - rmi: removes image `docker rmi nginx` (ensure no containers are running off this image before removing)
     - pull: downloads an image, stores it on host `docker pull nginx`
-    - exec: execute a command on a running container `docker exec my_container cat /etc/hosts` (prints the contents of the etc/hosts file)
+    - exec: execute a command on a running container `docker exec my_container cat /etc/hosts` (prints to the terminal the contents of the etc/hosts file)
+       
 
 
 
