@@ -81,4 +81,8 @@ _I'm participating in my employer's leadership training program. Notes and whatn
 
 **General Notes from Readings:**  
 
-- Your employees understand their jobs. They know their tasks, roles, and functions within the org, and it's time for you to let them do what they need to do to get the job done. Your role is to encourage and support the decision-making environment, and give employees the tools and knowledge they need to make and act upon their own decisions. If a company has a history of shutting down or letting go of initiators, the leader can't tell employees, "You are empowered." 
+- Your employees understand their jobs. They know their tasks, roles, and functions within the org, and it's time for you to let them do what they need to do to get the job done. Your role is to encourage and support the decision-making environment, and give employees the tools and knowledge they need to make and act upon their own decisions. If a company has a history of shutting down or letting go of initiators, the leader can't tell employees, "You are empowered."  
+    - What can a leader do when they are driving engagement, but their leader is not?
+- Energy, not time, is the currency of engagement. Engagement is the combination of the perception of changes and events happening around you, and the level of energy experienced. So, highly engaged people have positive perceptions of changes going on around them and they put a high level of energy into their work and everything else they do.
+    - What creates this positive perception? Being engaged, but WHY/HOW?
+    - Engaged employees take ownership of what they do and how they do it; how do leaders encourage this state? Create conditions in which they choose to be engaged.
