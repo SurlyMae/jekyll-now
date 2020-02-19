@@ -7,17 +7,18 @@ _I'm participating in my employer's leadership training program. Notes and whatn
 
 **My focuses:**
 <ins>Driving Engagement:</ins>
-    - Less skilled:
-        - Has little insight into what motivates others
-        - Doesn't give people enough flexibility and autonomy to do their work
-        - Does little to create enthusiasm
-        - Is unwilling to share ownership and give up control of assignments
-    - Skilled:
-        - Structures the work so it aligns with people's goals and motivators
-        - Empowers others
-        - Makes each person feel their contributions are important
-        - Invites input and shares ownership and visibility
-        - Shows a clear connection between people's motivators and the organizational goals
+
+- Less skilled:
+    - Has little insight into what motivates others
+    - Doesn't give people enough flexibility and autonomy to do their work
+    - Does little to create enthusiasm
+    - Is unwilling to share ownership and give up control of assignments
+- Skilled:
+    - Structures the work so it aligns with people's goals and motivators
+    - Empowers others
+    - Makes each person feel their contributions are important
+    - Invites input and shares ownership and visibility
+    - Shows a clear connection between people's motivators and the organizational goals
     - Talented:
         - Creates a positive and motivating work environment
         - Knows what motivates different people and aligns work accordingly
@@ -66,3 +67,9 @@ _I'm participating in my employer's leadership training program. Notes and whatn
     - Overused:
         - Relies on networking at the expense of other skills and work priorities
         - May be perceived as a one-sided networker, using networks solely for own advantage
+
+**Leading discussions:**
+    - Don't let the discussion wander. Bringing in specific quotes, problems, or other samples of the material can ensure that even underprepared participants will have something to talk about.
+    - Use open-ended questions and ask participants for clarification, examples, definitions.
+    - Summarize responses without taking a stand one way or another.
+    - Toward the end of the discussion, review the main ideas, the thread of the discussion, and conclusions.
