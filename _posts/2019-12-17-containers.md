@@ -60,6 +60,9 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
     - run: starts a container `docker run nginx`
         - attached: runs container in foreground (attached to console/standard out of container), you'll see output of service on screen, can't do anything else in that terminal until container stops `docker run my_container/my_service`
         - detached: runs container in background mode so you can get your terminal prompt `docker run -d my_container/my_service`
+        - to attach to the container running in background, use `docker attach my_container_name_or_ID`
+        - run & add name: `docker run --name my_container-name image_name`
+        - run a specific version of container using a tag: `docker run container_name:version`
     - ps: lists running containers `docker ps`
     - ps -a: lists all containers `docker ps -a`
     - stop: stops a container `docker stop my_container`
