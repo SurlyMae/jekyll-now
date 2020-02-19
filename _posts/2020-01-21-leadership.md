@@ -78,3 +78,7 @@ _I'm participating in my employer's leadership training program. Notes and whatn
 - Use open-ended questions and ask participants for clarification, examples, definitions.
 - Summarize responses without taking a stand one way or another.
 - Toward the end of the discussion, review the main ideas, the thread of the discussion, and conclusions.
+
+**General Notes from Readings:**  
+
+- Your employees understand their jobs. They know their tasks, roles, and functions within the org, and it's time for you to let them do what they need to do to get the job done. Your role is to encourage and support the decision-making environment, and give employees the tools and knowledge they need to make and act upon their own decisions. If a company has a history of shutting down or letting go of initiators, the leader can't tell employees, "You are empowered." 
