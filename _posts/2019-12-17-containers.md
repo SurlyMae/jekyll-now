@@ -58,11 +58,15 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
 - A container only runs as long as the process that's inside it is alive
 - Commands:
     - run: starts a container `docker run nginx`
-        - attached: runs container in foreground (attached to console/standard out of container), you'll see output of service on screen, can't do anything else in that terminal until container stops `docker run my_container/my_service`
-        - detached: runs container in background mode so you can get your terminal prompt `docker run -d my_container/my_service`
-        - to attach to the container running in background, use `docker attach my_container_name_or_ID`
-        - run & add name: `docker run --name my_container-name image_name`
-        - run a specific version of container using a tag: `docker run container_name:version`
+        - attached: run container in foreground (attached to console/standard out of container), you'll see output of service on screen, can't do anything else in that terminal until container stops `docker run my_container/my_service`
+        - detach: run container in background mode so you can get back your terminal prompt `docker run -d my_container/my_service`
+        - attach: attach to the container running in background `docker attach my_container_name_or_ID`
+        - name: adds name to container `docker run --name my_container_name image_name`
+        - tag: runs a container using a tag `docker run container_name:tag`
+        - interactive: run in interactive mode. maps the standard input of your host to the docker container `docker run -i my_container/my_service` 
+        - terminal: run in interactive mode with a terminal where you can see prompts from your app `docker run -it my_container/my_service`
+        - port: maps port on docker host to port on docker container `docker run -p 80:5000 my_container/my_service`
+        - volume: for data persistence (not losing the container's data when the container ceases to exist), map directory outside of the container but on the docker host to a directory in the container `docker run -v host_directory:container_directory my_container`
     - ps: lists running containers `docker ps`
     - ps -a: lists all containers `docker ps -a`
     - stop: stops a container `docker stop my_container`
@@ -71,6 +75,8 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
     - rmi: removes image `docker rmi nginx` (ensure no containers are running off this image before removing)
     - pull: downloads an image, stores it on host `docker pull nginx`
     - exec: execute a command on a running container `docker exec my_container cat /etc/hosts` (prints to the terminal the contents of the etc/hosts file)
+    - inspect: returns all details about container `docker inspect my_container_name`
+    - logs: view container logs `docker logs my_container_name`
        
 
 
