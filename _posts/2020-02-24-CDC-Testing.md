@@ -21,6 +21,11 @@ _Research into pact.io_
     - Output of this test is one or more JSON files - these are the contracts (the pacts)
   1. Contracts are passed on to provider service
     - via shared repo, etc
+  1. Provider tests if their service still 'obeys' the contract set by the consumer
+    - Provider runs its own verification tests against a real-life version of its service, using shared pact file
+  1. If tests do not succeed, provider developers should notify consumer developers
 
+
+[Baeldung Resource](https://www.baeldung.com/pact-junit-consumer-driven-contracts)
 
 [CodeFresh Resource](https://codefresh.io/docker-tutorial/how-to-test-microservice-integration-with-pact/)
