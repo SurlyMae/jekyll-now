@@ -62,7 +62,7 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
         - detach: run container in background mode so you can get back your terminal prompt `docker run -d my_container/my_service`
         - attach: attach to the container running in background `docker attach my_container_name_or_ID`
         - name: adds name to container `docker run --name my_container_name image_name`
-        - tag: runs a container using a tag `docker run container_name:tag`
+        - tag: run a container using a tag `docker run container_name:tag`
         - interactive: run in interactive mode. maps the standard input of your host to the docker container `docker run -i my_container/my_service` 
         - terminal: run in interactive mode with a terminal where you can see prompts from your app `docker run -it my_container/my_service`
         - port: maps port on docker host to port on docker container `docker run -p 80:5000 my_container/my_service`
@@ -77,7 +77,15 @@ From [Adrian Mouat](https://blog.container-solutions.com/understanding-volumes-d
     - exec: execute a command on a running container `docker exec my_container cat /etc/hosts` (prints to the terminal the contents of the etc/hosts file)
     - inspect: returns all details about container `docker inspect my_container_name`
     - logs: view container logs `docker logs my_container_name`
-       
+    
+- Containerizing your already existing app / creating your own image
+    - Start by thinking about every step you'd have to do to deploy the app manually. Example steps: 
+        1. Start with an OS
+        1. Update source repositories
+        1. Install dependencies
+        1. Copy source code of app over to a deployment location, like `/opt` folder
+        1. Run the web server
+
 
 
 
