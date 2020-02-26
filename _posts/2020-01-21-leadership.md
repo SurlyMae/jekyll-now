@@ -86,3 +86,27 @@ _I'm participating in my employer's leadership training program. Notes and whatn
 - Energy, not time, is the currency of engagement. Engagement is the combination of the perception of changes and events happening around you, and the level of energy experienced. So, highly engaged people have positive perceptions of changes going on around them and they put a high level of energy into their work and everything else they do.
     - What creates this positive perception? Being engaged, but WHY/HOW?
     - Engaged employees take ownership of what they do and how they do it; how do leaders encourage this state? Create conditions in which they choose to be engaged.
+
+**Employee Development:**  
+Ask for development until it stings!
+- What would you like to do?
+- Where do you see yourself?
+- What are your aspirations?
+- Use the resources, tools, people around you
+- Where you are:
+    - job title
+    - job description
+    - behavior
+    - performance
+        - requires self-reflection
+        - leader and peer feedback
+- Where you want to go:
+    - growth conversations
+    - where do I want to grow my skillset?
+    - what follows my interests?
+    - what supports the business?
+    - what do you like to do?
+    - what are you good at?
+    - what do you want to accomplish in the role you're taking on?
+
+
