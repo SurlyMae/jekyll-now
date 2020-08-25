@@ -3,7 +3,7 @@ layout: post
 title: /Notes/ Leadership
 ---
 
-_I'm participating in my employer's leadership training program. Notes and whatnot!_
+_I'm participating in my employer's leadership training program. Notes and whatnot._
 
 **My focuses:**  
 <ins>Driving Engagement:</ins>
@@ -115,15 +115,6 @@ Leadership webinar notes: (spring into leadership 3/10)
 67% of women rate having a mentor as very important to career, but only 37% don't have a workplace mentor
 women ask for mentorships less often than men
 companies with formalized mentorship programs are more profitable, while the people being mentored are more successful
- "I can just do it myself" - how this relates to the CHG culture and how this is not what we need to grow and improve
- Utah Business article about women execs not able to get hired in Utah
- Fear of asking people in superior roles to mentor
-biz idea: consultancy that sets up these formal mentorship programs in companies?
-establish rapport and relationship and build on that
-know where you do well, know where you need help, find people to fill those skills gaps. don't try to 'network' your way through the org
-have a very clear ask
-
-
 
 Servant leadership:
 True leadership emerges from those whose primary motivation is a deep desire to help others.
@@ -134,10 +125,3 @@ The servant leader seeks to identify the will of a group and helps clarify that 
 
 
 Great leaders exercise power by virtue of their passion and who they are. They possess the ability to make things happen by encouraging and inspiring others and acting as a catalyst for change. They are teachable. They show genuine concern for their team - the whole person, including life outside of work. They provide positive feedback, ask for team input and involve them in pivotal decisions. They model the way they want their team to act. They are authentic and honest. They work hard at being themselves, telling the truth, and investing in others.
-
-
-Retro kudos:
-Matt did an awesome job of floating around to different discussions/meetings where his knowledge was needed.
-Mike and Nick did an awesome job leading on their tickets.
-Amber did an awesome job keeping our refinement discussions contained and effective.
-Vince did an awesome job walking me through his integration test PR and keeping me in the loop on various tickets.
