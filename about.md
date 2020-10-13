@@ -11,4 +11,6 @@ I work as a software engineer in beautiful Salt Lake City, Utah. Before this, I
 
 **(Update summer 2020: Yep, still at home.)
 
+***(Update fall 2020: You guessed it, still at home. Possibly slowly going mad?)
+
 What will you find here? This is pretty much a site for personal use - mostly a collection of my tech notes that I can access from anywhere, with a few scattered blog posts. Welcome and thanks for reading!
